@@ -42,6 +42,22 @@
             border: 1px solid rgba(255, 255, 255, 0.08);
             box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
         }
+
+        .btn-ms {
+    background-color: #0078d4;
+}
+.btn-ms:hover {
+    background-color: #006cbd;
+}
+.btn-ms-glow {
+    background-color: #0078d4;
+    box-shadow: 0 0 20px rgba(0, 120, 212, 0.6);
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+.btn-ms-glow:hover {
+    background-color: #006cbd;
+    box-shadow: 0 0 35px rgba(0, 120, 212, 0.9);
+}
     </style>
 </head>
 <body class="bg-win-bg text-win-text font-sans antialiased min-h-screen flex flex-col selection:bg-win-accent selection:text-win-bg">
@@ -66,7 +82,10 @@
 
                 <!-- Action Button -->
                 <div class="flex items-center">
-                    <a href="#" class="hidden md:inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-win-accent hover:bg-win-accentHover transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-win-accent focus:ring-offset-win-bg">
+                    <a href="#" class="btn-ms hidden md:inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-win-accent hover:bg-win-accentHover transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-win-accent focus:ring-offset-win-bg">
+                    <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.4 24H0V12.6h11.4V24zM24 24H12.6V12.6H24V24zM11.4 11.4H0V0h11.4v11.4zm12.6 0H12.6V0H24v11.4z"/>
+                    </svg>
                         Get it for Windows
                     </a>
                     <!-- Mobile menu button -->
@@ -84,7 +103,7 @@
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                 <a href="#features" class="block px-3 py-2 rounded-md text-base font-medium text-win-textMuted hover:text-white hover:bg-win-panelHover">Features</a>
                 <a href="privacy.html" class="block px-3 py-2 rounded-md text-base font-medium text-win-textMuted hover:text-white hover:bg-win-panelHover">Privacy Policy</a>
-                <a href="#" class="block mt-4 px-3 py-2 text-center rounded-md text-base font-medium text-white bg-win-accent hover:bg-win-accentHover">Get it for Windows</a>
+                <a href="#" class="btn-ms block mt-4 px-3 py-2 text-center rounded-md text-base font-medium text-white bg-win-accent hover:bg-win-accentHover">Get it for Windows</a>
             </div>
         </div>
     </header>
@@ -102,7 +121,7 @@
                 A lightning-fast, native Windows note-taking app with an infinite canvas, smart math solver, and total privacy.
             </p>
             <div class="flex justify-center mb-16">
-                <a href="#" class="inline-flex items-center justify-center px-8 py-4 border border-transparent text-lg font-medium rounded-xl text-white bg-win-accent hover:bg-win-accentHover shadow-lg hover:shadow-win-accent/25 transition-all duration-200 transform hover:-translate-y-1">
+                <a href="#" class="btn-ms-glow inline-flex items-center justify-center px-8 py-4 border border-transparent text-lg font-medium rounded-xl text-white bg-win-accent hover:bg-win-accentHover shadow-lg hover:shadow-win-accent/25 transition-all duration-200 transform hover:-translate-y-1">
                     <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path d="M11.4 24H0V12.6h11.4V24zM24 24H12.6V12.6H24V24zM11.4 11.4H0V0h11.4v11.4zm12.6 0H12.6V0H24v11.4z"/>
                     </svg>
